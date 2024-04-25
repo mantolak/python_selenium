@@ -27,7 +27,6 @@ def test_twitch():
     assert driver.find_element(By.CSS_SELECTOR, '[alt="StarCraft II"]').is_displayed()
     driver.find_element(By.CSS_SELECTOR, '[alt="StarCraft II"]').click()
     streamer_list = driver.find_elements(By.CSS_SELECTOR, '[role="list"] div')
-    # print(streamer_list)
     assert len(streamer_list) > 0
 
     delta_y = driver.get_window_rect()
