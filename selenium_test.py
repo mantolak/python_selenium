@@ -13,7 +13,6 @@ def test_twitch():
     chrome_options = Options()
     chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
     driver = webdriver.Chrome(chrome_options)
-    time.sleep(15)
 
     driver.get("https://m.twitch.tv/")
 
